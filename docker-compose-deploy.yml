@@ -8,8 +8,8 @@ services:
     volumes:
       - static-data:/vol/web
     environment:
-      - SECRET_KEY=devsecretkey
-      - ALLOWED_HOSTS=172.20.10.2
+      - SECRET_KEY=${SECRET_KEY}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS}
 
   proxy:
     build:
