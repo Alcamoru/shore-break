@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Shore Break</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Le Shore Break</a></li>
+            <li><a href="{% url 'carte' %}">Carte</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="#">Equipe</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="burger-image" style="background: url('{% static 'media/burger.jpeg' %}') no-repeat center fixed;">
+        <div>
+            <h1>Le Shore Break</h1>
+            <h2>Restauration rapide en front de mer</h2>
+
+            <div class="see-menu">
+                <a href="{% url 'carte' %}"><button>La Carte</button></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="social-medias">
+        <a href="tel:+0547557504"><img src="{% static 'media/phone.png' %}" alt=""></a>
+        <a href="mailto:info@clubfrance-trouenun.com"><img src="{% static 'media/email.png' %}" alt=""></a>
+        <a href="https://www.linkedin.com/company-beta/11198074/"><img src="{% static 'media/linkedin.png' %}" alt=""></a>
+        <a href="http://www.facebook.com/CFtrouenun"><img src="{% static 'media/facebook.png' %}" alt=""></a>
+        <a href="http://instagram.com/CFtrouenun"><img src="{% static 'media/instagram.png' %}" alt=""></a>
+    </div>
+    <div class="footer-links">
+        <div><p>Entreprise</p></div>
+        <div><p>Vidéos</p></div>
+        <div><p>Mentions légales - CGU</p></div>
+    </div>
+</footer>
+</body>
+</html>

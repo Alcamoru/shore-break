@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static "css/contact.css" %}">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Le Shore Break</a></li>
+            <li><a href="{% url 'carte' %}">Carte</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Equipe</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+    <div class="informations">
+        <div class="contact">
+            <h1>Informations</h1>
+            <p>Téléphone <a href="tel:+33 5 47 55 75 04">+33 5 47 55 75 04</a></p>
+            <p>Email <a href="mailto:contact@the-shore-break.fr">+33 5 47 55 75 04</a></p>
+        </div>
+        <div class="adresse">
+            <h1>Adresse</h1>
+            <p>11 Boulevard François Mitterrand</p>
+            <p>40130 Capbreton</p>
+        </div>
+        <div class="horaires">
+            <h1>Horaires</h1>
+            <p>Lundi-Vendredi: 11h30 à 22h</p>
+            <p>Samedi-Dimanche: 11h00 à 22h</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="social-medias">
+        <a href="tel:+0547557504"><img src="{% static 'media/phone.png' %}" alt=""></a>
+        <a href="mailto:info@clubfrance-trouenun.com"><img src="{% static 'media/email.png' %}" alt=""></a>
+        <a href="https://www.linkedin.com/company-beta/11198074/"><img src="{% static 'media/linkedin.png' %}" alt=""></a>
+        <a href="http://www.facebook.com/CFtrouenun"><img src="{% static 'media/facebook.png' %}" alt=""></a>
+        <a href="http://instagram.com/CFtrouenun"><img src="{% static 'media/instagram.png' %}" alt=""></a>
+    </div>
+    <div class="footer-links">
+        <div><p>Entreprise</p></div>
+        <div><p>Vidéos</p></div>
+        <div><p>Mentions légales - CGU</p></div>
+    </div>
+</footer>
+</body>
+</html>

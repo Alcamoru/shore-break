@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La Carte</title>
+    <link rel="stylesheet" href="{% static "css/carte.css" %}">
+</head>
+<body>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="{% url 'index' %}">Le Shore Break</a></li>
+            <li><a href="#">Carte</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="#">Equipe</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+
+</main>
+
+<footer>
+    <div class="social-medias">
+        <a href="tel:+0547557504"><img src="{% static 'media/phone.png' %}" alt=""></a>
+        <a href="mailto:info@clubfrance-trouenun.com"><img src="{% static 'media/email.png' %}" alt=""></a>
+        <a href="https://www.linkedin.com/company-beta/11198074/"><img src="{% static 'media/linkedin.png' %}" alt=""></a>
+        <a href="http://www.facebook.com/CFtrouenun"><img src="{% static 'media/facebook.png' %}" alt=""></a>
+        <a href="http://instagram.com/CFtrouenun"><img src="{% static 'media/instagram.png' %}" alt=""></a>
+    </div>
+    <div class="footer-links">
+        <div><p>Entreprise</p></div>
+        <div><p>Vidéos</p></div>
+        <div><p>Mentions légales - CGU</p></div>
+    </div>
+</footer>
+</body>
+</html>
