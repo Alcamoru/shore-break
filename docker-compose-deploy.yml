@@ -1,0 +1,26 @@
+version: 3.12.2
+
+services:
+  app:
+    build:
+      context: .
+    restart: always
+    volumes:
+      - static-data:/vol/web
+    environment:
+      - SECRET_KEY=devsecretkey
+      - ALLOWED_HOSTS=172.20.10.2
+
+  proxy:
+    build:
+      context: ./proxy
+    restart: always
+    depends_on:
+      - app
+    ports:
+      - 80:8000
+    volumes:
+      - static-data:/vol/static
+
+volumes:
+  static-data:

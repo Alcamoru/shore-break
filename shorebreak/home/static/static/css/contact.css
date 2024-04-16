@@ -65,7 +65,7 @@ header {
 
 .informations {
     padding: 3em;
-    background: url("../media/img.png") no-repeat fixed;
+    background: url("../../media/img.png") no-repeat fixed;
     display: grid;
     grid-gap: 5em;
     grid-template-columns: repeat(2, 1fr);

@@ -11,7 +11,7 @@ services:
       - 8000:8000
     volumes:
       - ./shorebreak:/shorebreak
-      - ./data/web:/vol/web
     environment:
+      - ALLOWED_HOSTS=0.0.0.0
       - SECRET_KEY=devsecretkey
       - DEBUG=1
